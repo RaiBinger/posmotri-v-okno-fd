@@ -1,0 +1,29 @@
+{
+  "name": "posmotri-v-okno-fd",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/RaiBinger/posmotri-v-okno-fd#readme",
+  "bugs": {
+    "url": "https://github.com/RaiBinger/posmotri-v-okno-fd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaiBinger/posmotri-v-okno-fd.git"
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Test\" && exit 1",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint \"**/*.css\"",
+    "lintfix": "stylelint \"**/*.css\" --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "dependencies": {
+    "pretier": "^0.0.1",
+    "prettier": "^3.9.6",
+    "stylelint": "^17.15.0"
+  }
+}
