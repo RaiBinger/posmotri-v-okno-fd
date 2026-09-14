@@ -242,3 +242,12 @@ ol {
   height: 100%;
   opacity: 0;
 }
+
+.search-form__label:has(:checked) .search-form__pseudo-checkbox:after {
+  opacity: 1;
+}
+
+.search-form__label:not(:has(input[type=text])):hover .search-form__label-text {
+  text-decoration: underline;
+}
+
