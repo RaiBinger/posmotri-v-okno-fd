@@ -77,7 +77,6 @@ ol {
   flex-direction: column;
   gap: 26px;
   max-width: 399px;
-  height: 534;
 }
 
 .title {
@@ -91,7 +90,7 @@ ol {
 
 .content__accent {
   display: inline-block;
-  opacity: 0.3;
+  color: rgb(84 80 80);
 }
 
 .content__list-container {
@@ -146,13 +145,14 @@ ol {
 }
 
 .content__video-card-description {
-  display: inline-block;
+  display: -webkit-box;
   overflow: hidden;
   font-weight: 400;
   font-size: 18px;
   line-height: 0.9;
   letter-spacing: 0%;
-  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 .content__video-card-thumbnail {
@@ -257,9 +257,12 @@ ol {
   outline-offset: 2px;
 }
 
-.search-form__label:not(:has(input[type=text])):hover {
-  text-decoration: underline;
+.search-form__label:hover {
   cursor: pointer;
+}
+
+ .search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
 }
 
 .search-form__pseudo-checkbox {
